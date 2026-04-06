@@ -24,6 +24,48 @@
   .text-glow {
     text-shadow: 0 0 15px rgba(99, 102, 241, 0.5);
   }
+  .scrolling-ticker {
+    display: inline-block;
+    white-space: nowrap;
+    animation: ticker 30s linear infinite;
+  }
+  .scrolling-ticker:hover {
+    animation-play-state: paused;
+  }
+  @keyframes ticker {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
+  
+  .glitch-effect {
+    animation: glitch 3s infinite;
+  }
+  @keyframes glitch {
+    0% { transform: translate(0) }
+    20% { transform: translate(-2px, 2px) }
+    40% { transform: translate(-2px, -2px) }
+    60% { transform: translate(2px, 2px) }
+    80% { transform: translate(2px, -2px) }
+    100% { transform: translate(0) }
+  }
+
+  .neon-pulse {
+    animation: neonPulse 2s infinite alternate;
+  }
+  @keyframes neonPulse {
+    0% { box-shadow: 0 0 10px rgba(236,72,153,0.2), 0 0 20px rgba(236,72,153,0.2); }
+    100% { box-shadow: 0 0 20px rgba(236,72,153,0.6), 0 0 40px rgba(236,72,153,0.6); }
+  }
+
+  .gradient-shift {
+    background-size: 200% 200%;
+    animation: gradientMove 5s ease infinite;
+  }
+  @keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
 }
 
 * { box-sizing: border-box; }

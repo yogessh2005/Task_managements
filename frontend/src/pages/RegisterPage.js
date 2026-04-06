@@ -38,8 +38,24 @@ export default function RegisterPage() {
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-400 to-accent-300">The Elite.</span>
           </h1>
           <p className="text-xl text-zinc-400 max-w-lg font-light leading-relaxed">
-            Register to become part of a streamlined ecosystem. Your account will undergo secure validation before activation.
+            The ultimate system for elite teams to manage tasks, streamline communication, and deliver projects without compromise.
           </p>
+
+          <div className="mt-20 pt-10 border-t border-white/10 max-w-lg overflow-hidden">
+            <h3 className="text-xs font-bold text-white uppercase tracking-widest mb-3 flex items-center gap-2">
+              <span className="w-1.5 h-1.5 bg-brand-500 rounded-full animate-pulse"></span> About Nova Solutions
+            </h3>
+            <div className="relative w-full overflow-hidden mb-5">
+              <p className="text-sm text-zinc-400 font-mono tracking-wide scrolling-ticker">
+                Nova Solutions is a global leader in enterprise workforce orchestration. We specialize in developing high-level, secure operational platforms designed to align distributed intelligence and maximize operational yield. Seamlessly tracking thousands of concurrent directives without compromise.
+              </p>
+            </div>
+            <div className="flex flex-wrap gap-6 text-[10px] font-bold text-zinc-600 uppercase tracking-widest">
+              <span className="hover:text-brand-400 cursor-pointer transition-colors">Enterprise Division</span>
+              <span className="hover:text-brand-400 cursor-pointer transition-colors">Privacy Protocol</span>
+              <span className="hover:text-brand-400 cursor-pointer transition-colors">Terms of Use</span>
+            </div>
+          </div>
         </div>
       </div>
 
