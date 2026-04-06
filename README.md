@@ -19,4 +19,93 @@ Status (Pending / In Progress / Completed)
 Notes or comments
 All updates are immediately visible to the Admin dashboard.
 
-for managing organizational tasks using modern web technologies.
+This removes the need for emails or manual follow-ups.
+
+🛠️ Technology Stack
+
+This project is built using the MERN stack.
+
+Frontend
+React.js – For building the interactive user interface.
+Tailwind CSS – For responsive and modern UI styling.
+Backend
+Node.js – Runtime environment for server-side development.
+Express.js – Handles API routes and server logic.
+Database
+MongoDB – Stores users, tasks, and activity logs.
+Mongoose – Schema-based database modeling.
+Security
+JWT (JSON Web Tokens) – Secure authentication system.
+bcrypt – Password hashing for secure storage.
+🚀 Key Features
+1. User Authentication
+Secure login and registration system
+Password encryption using bcrypt
+Token-based authentication using JWT
+2. Role-Based Access
+Admin
+Assign tasks
+View all employee progress
+Monitor system activity
+Employee
+View assigned tasks
+Update task progress
+Add notes and comments
+3. Task Management
+Task creation with priority and deadlines
+Progress tracking (0–100%)
+Status updates (Pending, In Progress, Completed)
+4. Activity Logs
+Records user actions such as:
+Login
+Task assignment
+Progress updates
+Admins can view employee-specific activity logs
+5. Search and Filtering
+
+Admins can search employees by:
+
+Name
+Email
+Age
+⚙️ Installation & Setup
+1️⃣ Backend Setup
+cd taskmanager/backend
+npm install
+
+Create a .env file:
+
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_secure_jwt_secret
+NODE_ENV=development
+
+Run the server:
+
+npm run dev
+2️⃣ Frontend Setup
+cd taskmanager/frontend
+npm install
+npm start
+
+The application will run at:
+
+http://localhost:3000
+🔑 Default Admin Access
+
+For first-time access:
+
+Email: admin@taskmanager.com
+Password: admin123
+
+After login, the admin can start assigning tasks to employees.
+
+📈 Future Improvements
+Email notifications for task updates
+File attachments for tasks
+Real-time updates using WebSockets
+Advanced analytics dashboard
+
+✅ Summary
+
+The Nova Task Management System provides a secure, scalable, and efficient solution for managing organizational tasks using modern web technologies.
